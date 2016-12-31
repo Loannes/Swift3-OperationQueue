@@ -5,6 +5,15 @@
 //  Created by dev_sinu on 2016. 12. 26..
 //  Copyright © 2016년 dev_sinu. All rights reserved.
 //  http://seorenn.blogspot.kr/2014/06/swift-nsoperationqueue.html
+//
+//  개발자 노트 :
+//  기본 기능을 사용하면 아래와 같은 장점이 있다
+//  각 상황별 대응이 좀 더 유기적으로 할 수 있다는점
+//  특정 관리 로직을 추가해서 상황별로 대응할 수 있는 장점이 있다
+//  하지만 단점으로는 간단한 작업이나 외부에서 이미 검증되어 바로 실행되어야 하는 테스크일 경우
+//  여러가지 이유로 번거롭고 복잡해 보인다는 것이다
+//
+
 
 import Foundation
 
