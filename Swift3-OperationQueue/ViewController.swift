@@ -17,12 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var label5: UILabel!
     
     var num = 0
-    let someWork = SomeWork()
+    let queue = CustomQueue()
+    let container: UIView = UIView()
     
     // MARK: 블럭 사용 operationQueue 함수
     @IBAction func startOP(_ sender: Any) {
         for _ in 1...5 {
-            someWork.addTask(task: task)
+            queue.addTask(task: task)
         }
     }
     
@@ -39,26 +40,41 @@ class ViewController: UIViewController {
         num += 1
         
         if num == 1 {
+            DispatchQueue.main.async(execute: {
+                self.label1.text = "작업중..."
+            })
             Thread.sleep(forTimeInterval: 1.0)
             DispatchQueue.main.async(execute: {
                 self.label1.text = "작업 완료"
             })
         }else if num == 2 {
+            DispatchQueue.main.async(execute: {
+                self.label2.text = "작업중..."
+            })
             Thread.sleep(forTimeInterval: 1.0)
             DispatchQueue.main.async(execute: {
                 self.label2.text = "작업 완료"
             })
         }else if num == 3 {
-            Thread.sleep(forTimeInterval: 3.0)
+            DispatchQueue.main.async(execute: {
+                self.label3.text = "작업중..."
+            })
+            Thread.sleep(forTimeInterval: 5.0)
             DispatchQueue.main.async(execute: {
                 self.label3.text = "작업 완료"
             })
         }else if num == 4 {
+            DispatchQueue.main.async(execute: {
+                self.label4.text = "작업중..."
+            })
             Thread.sleep(forTimeInterval: 1.0)
             DispatchQueue.main.async(execute: {
                 self.label4.text = "작업 완료"
             })
         }else if num == 5 {
+            DispatchQueue.main.async(execute: {
+                self.label5.text = "작업중..."
+            })
             Thread.sleep(forTimeInterval: 1.0)
             DispatchQueue.main.async(execute: {
                 self.label5.text = "작업 완료"
@@ -75,7 +91,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

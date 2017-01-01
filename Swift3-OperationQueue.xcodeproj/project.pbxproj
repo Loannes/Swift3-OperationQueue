@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B514321E17935900A5A39F /* SomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B514311E17935900A5A39F /* SomeWork.swift */; };
+		01B514321E17935900A5A39F /* CustomQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B514311E17935900A5A39F /* CustomQueue.swift */; };
 		8A9E89C91E110D4700025015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E89C81E110D4700025015 /* AppDelegate.swift */; };
 		8A9E89CB1E110D4700025015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E89CA1E110D4700025015 /* ViewController.swift */; };
 		8A9E89CE1E110D4700025015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E89CC1E110D4700025015 /* Main.storyboard */; };
 		8A9E89D01E110D4700025015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E89CF1E110D4700025015 /* Assets.xcassets */; };
 		8A9E89D31E110D4700025015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E89D11E110D4700025015 /* LaunchScreen.storyboard */; };
-		8A9E89DB1E110D6400025015 /* MyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E89DA1E110D6400025015 /* MyOperation.swift */; };
-		8A9E89DD1E110D7700025015 /* MyQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E89DC1E110D7600025015 /* MyQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01B514311E17935900A5A39F /* SomeWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeWork.swift; sourceTree = "<group>"; };
+		01B514311E17935900A5A39F /* CustomQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomQueue.swift; sourceTree = "<group>"; };
 		8A9E89C51E110D4700025015 /* Swift3-OperationQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift3-OperationQueue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9E89C81E110D4700025015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A9E89CA1E110D4700025015 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +24,6 @@
 		8A9E89CF1E110D4700025015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A9E89D21E110D4700025015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A9E89D41E110D4700025015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A9E89DA1E110D6400025015 /* MyOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperation.swift; sourceTree = "<group>"; };
-		8A9E89DC1E110D7600025015 /* MyQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,15 +37,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		011070401E18EA9D0010CCF8 /* OriginalQueue */ = {
-			isa = PBXGroup;
-			children = (
-				8A9E89DA1E110D6400025015 /* MyOperation.swift */,
-				8A9E89DC1E110D7600025015 /* MyQueue.swift */,
-			);
-			name = OriginalQueue;
-			sourceTree = "<group>";
-		};
 		8A9E89BC1E110D4700025015 = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +56,7 @@
 		8A9E89C71E110D4700025015 /* Swift3-OperationQueue */ = {
 			isa = PBXGroup;
 			children = (
-				011070401E18EA9D0010CCF8 /* OriginalQueue */,
-				01B514311E17935900A5A39F /* SomeWork.swift */,
+				01B514311E17935900A5A39F /* CustomQueue.swift */,
 				8A9E89C81E110D4700025015 /* AppDelegate.swift */,
 				8A9E89CA1E110D4700025015 /* ViewController.swift */,
 				8A9E89CC1E110D4700025015 /* Main.storyboard */,
@@ -154,11 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9E89DD1E110D7700025015 /* MyQueue.swift in Sources */,
 				8A9E89CB1E110D4700025015 /* ViewController.swift in Sources */,
 				8A9E89C91E110D4700025015 /* AppDelegate.swift in Sources */,
-				8A9E89DB1E110D6400025015 /* MyOperation.swift in Sources */,
-				01B514321E17935900A5A39F /* SomeWork.swift in Sources */,
+				01B514321E17935900A5A39F /* CustomQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
