@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011070401E18EA9D0010CCF8 /* OriginalQueue */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E89DA1E110D6400025015 /* MyOperation.swift */,
+				8A9E89DC1E110D7600025015 /* MyQueue.swift */,
+			);
+			name = OriginalQueue;
+			sourceTree = "<group>";
+		};
 		8A9E89BC1E110D4700025015 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +69,7 @@
 		8A9E89C71E110D4700025015 /* Swift3-OperationQueue */ = {
 			isa = PBXGroup;
 			children = (
-				8A9E89DA1E110D6400025015 /* MyOperation.swift */,
-				8A9E89DC1E110D7600025015 /* MyQueue.swift */,
+				011070401E18EA9D0010CCF8 /* OriginalQueue */,
 				01B514311E17935900A5A39F /* SomeWork.swift */,
 				8A9E89C81E110D4700025015 /* AppDelegate.swift */,
 				8A9E89CA1E110D4700025015 /* ViewController.swift */,
