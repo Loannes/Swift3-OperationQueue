@@ -32,12 +32,14 @@ class CustomQueue {
         let operation = BlockOperation(block: {
             DispatchQueue.main.async(execute: {
                 self.notiCenter.post(name: NSNotification.Name(rawValue: "startIndicator"), object: nil)
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
             })
 
             task()
 
             DispatchQueue.main.async(execute: {
                 self.notiCenter.post(name: NSNotification.Name(rawValue: "stopIndicator"), object: nil)
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
             })
 
             Thread.sleep(forTimeInterval: 1.0)
@@ -50,16 +52,15 @@ class CustomQueue {
         if let rootView = UIApplication.shared.keyWindow?.rootViewController?.view! {
             container.frame = rootView.frame
             container.center = rootView.center
-            container.backgroundColor = UIColor(netHex:0x000000)
-            container.alpha = 0.2
+            container.alpha = 0.8
             
             let loadingView: UIView = UIView()
             loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
             loadingView.center = rootView.center
-            loadingView.backgroundColor = UIColor(netHex:0x444444)
-            loadingView.alpha = 0.7
+            loadingView.backgroundColor = UIColor(netHex:0x000000)
+            loadingView.alpha = 0.8
             loadingView.clipsToBounds = true
-            loadingView.layer.cornerRadius = 10
+            loadingView.layer.cornerRadius = 20
             
             let actInd: UIActivityIndicatorView = UIActivityIndicatorView()
             actInd.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
